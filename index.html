@@ -16,6 +16,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
         <link rel="stylesheet" href="style.css">
 </head>
 
@@ -70,7 +73,7 @@
                             <a class="dropdown-item" href="#"><a style="text-decoration:none"
                                     href="https://team-io-locale.herokuapp.com">Locale</a></a>
                             <a class="dropdown-item" href="#"><a style="text-decoration:none"
-                                    href="https://team-io-locale.herokuapp.com/">Team IO github</a></a>
+                                    href="https://github.com/TeamIO-NZ/Locale-Backend">Team IO github</a></a>
 
                         </div>
                     </li>
@@ -110,31 +113,31 @@
                     You may register for your questions to be asked on our platform.
                 </p>
                 <div>
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <div class="form-group">
                             <label for="formGroupExampleInput">First Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name" name="firstname">
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Last Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name" name="lastname">
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Email</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email" name="email">
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Organisation</label>
                             <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="Organisation">
+                                placeholder="Organisation" name="organisation">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Proposal</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                placeholder="Your Proposal"></textarea>
+                                placeholder="Your Proposal" name="proposal"></textarea>
                         </div>
                         <div class="centerLine">
-                            <button class="btn btn-lg bg-light" style="margin-right: 2em;">Submit</button>
+                            <button class="btn btn-lg bg-light" type="submit" style="margin-right: 2em;">Submit</button>
                             <button class="btn btn-lg bg-light">Reset</button>
                     </form>
                 </div>
