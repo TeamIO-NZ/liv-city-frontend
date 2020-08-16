@@ -109,7 +109,9 @@ main{
 text-align: center;
 padding: 4em;
 color: white;
-background-image: url(Resourses/showcase-image.jpeg)
+background-image: url(Resourses/banner.jpg);
+background-size:     cover;                      /* <------ */
+background-repeat:   no-repeat;
 }
 
 .centerLine{
